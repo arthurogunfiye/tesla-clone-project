@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 1rem;
+}
+
+.nav__logo--img {
+  object-fit: contain;
+  flex: 1;
+  width: 5.625rem;
+  margin-right: 6.25rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1rem; /* You can use this to set space between the nav links instead of using margin */
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__right a {
+  z-index: 0;
+  position: relative;
+}
+
+.MuiSvgIcon-root {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.nav__link--hidden {
+  visibility: hidden;
+}
+
+/* We used visibility:hidden (line 52) and not display:none bcos using
+  display:none would disrupt the flow of the nav links and push
+  them to the right (line 16) to fill the gap left when these elements
+  are removed from the DOM by display:none */

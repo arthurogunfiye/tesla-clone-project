@@ -1,0 +1,27 @@
+.teslaAccountNav {
+  padding: 7px 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+}
+
+.teslaAccountNav__logo--img {
+  object-fit: contain;
+  width: 80px;
+  filter: brightness(0) invert(1);
+}
+
+.teslaAccountNav__menu {
+  z-index: 2;
+}
+
+.teslaAccountNav__menu > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.teslaAccount__closeMenu {
+  color: black;
+}

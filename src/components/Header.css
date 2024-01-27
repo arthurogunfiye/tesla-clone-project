@@ -1,0 +1,86 @@
+.header {
+  background: url("https://tesla.com/ns_videos/model-3-social.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid; /* Shorthand for declaring display:flex and flex-direction:column */
+  place-items: center; /* Shorthand for declaring align-items:center and justify-content:center*/
+}
+
+/* Lines 2-6 css code from https://css-tricks.com/perfect-full-page-background-image/
+to have background image cover the entire window at all times */
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  height: 28rem;
+}
+
+.header__infoText {
+  text-align: center;
+  flex: 1;
+}
+
+.header__infoText--title {
+  color: #393c41;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.header__infoText--sub-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #5c5e62;
+}
+
+.touchlessDelivery {
+  padding-bottom: 4px;
+  padding-top: 1rem;
+  border-bottom: 1px solid black;
+  color: #393c41;
+}
+
+.touchlessDelivery:hover {
+  border-bottom-width: 2px;
+  color: black;
+}
+
+.header__ctas {
+  display: flex;
+  margin-top: 29rem;
+  gap: 1.25rem;
+}
+
+.header__ctas button {
+  cursor: pointer;
+  border: none;
+  width: 16.25rem;
+  border-radius: 50px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+.header__btnPry {
+  background-color: #393c41;
+  color: white;
+  opacity: 0.9;
+}
+
+.header__btnSec {
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+}
+
+/* justify-items, justify-self and justify-content: 
+https://stackoverflow.com/questions/48535585/what-is-difference-between-justify-self-justify-items-and-justify-content-in-cs */
